@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Redirection Page</title>
+</head>
+<body>
+    <h1>Loop Redirection Page</h1>
+    <p>This page demonstrates a simple loop redirection.</p>
+    
+    <script>
+        // Simulate a loop redirection
+        var counter = 5; // Number of redirections
+        var delay = 2000; // Delay in milliseconds
+
+        function redirect() {
+            if (counter > 0) {
+                counter--;
+                setTimeout(function() {
+                    window.location.href = "https://yourwebsite.com/loop-redirection.html"; // Replace with your own URL
+                }, delay);
+            }
+        }
+
+        // Start the redirection
+        redirect();
+    </script>
+</body>
+</html>
